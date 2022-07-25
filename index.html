@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>4dice Meme Generator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./img/canvas-bg/water/end.png" type="image/png" sizes="50x50">
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flip-menu" id="flip"><span class="material-symbols-outlined">
+        autorenew
+        </span></div>
+      <div class="menu">
+        <div class="imagesButtons">
+          <button data-value="train" id="trainMeme" class="themeButton">Train</button>
+          <button data-value="eating" id="eatingMeme" class="themeButton active">Eating</button>
+          <button data-value="water" id="waterMeme" class="themeButton">Water</button>
+          <button data-value="run" id="runMeme" class="themeButton">Run</button>
+        </div>
+        <div class="textFields">
+          <div class="text">
+            <label for="textField1">Text in first field:</label>
+            <input type="text" id="textField1" name="textField1" />
+          </div>
+          <div class="text">
+            <label for="textField2">Text in second field:</label>
+            <input type="text" id="textField2" name="textField2" />
+          </div>
+        </div>
+      </div>
+      <div class="canvas-container" data-flip="false">
+        <p>Sample text 1</p>
+        <p>Sample text 2</p>
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
